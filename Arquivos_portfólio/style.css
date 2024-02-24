@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Inter:wght@100..900&display=swap');
+
+/* 
+Paleta de Cores:
+Amarelo: #C2A273
+Vinho: #501323
+Fontes:
+font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-style: normal; 
+  */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+}
+
+.container-barra-navegacao {
+    background-color: #501323;
+    width: 100vw;
+    height: 20vh;
+    position: fixed;
+    box-shadow: 10px 5px 5px black;
+}
+
+.barra-navegacao {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.barra-navegacao-lista {
+    display: flex;
+    list-style: none;
+
+}
+
+.barra-navegacao-item-lista {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.2rem;
+    color: #C2A273;
+    margin: 20px;
+    position: relative;
+    padding: 0.5rem;
+}
+
+.barra-navegacao-item-lista::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.2rem;
+    background: #C2A273;
+    transition: all 300ms ease-in-out;
+}
+
+.barra-navegacao-item-lista:hover::after {
+    width: 100%;
+}
+
+.container-info {
+    background-color: #501323;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.container-servicos {
+    background-color: #C2A273;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-portfolio {
+    background-color: #501323;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-abordagem {
+    background-color: #C2A273;
+    width: 100vw;
+    height: 100vh;
+}
+
+.container-rodape {
+    background-color: #501323;
+    width: 100vw;
+    height: 50vh;
+}
+
+.imagem-logo {
+    height: 20vh;
+
+}
