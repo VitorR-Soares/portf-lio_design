@@ -4,6 +4,7 @@
 Paleta de Cores:
 Amarelo: #C2A273
 Vinho: #501323
+Beje: #9AA963
 Fontes:
 font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -18,14 +19,15 @@ font-family: "Abril Fatface", serif;
     padding: 0;
     font-family: "Inter", sans-serif;
     font-size: 1rem;
+    scroll-behavior: smooth;
 }
 
 .container-barra-navegacao {
     background-color: #501323;
     width: 100vw;
     height: 20vh;
-    position: fixed;
-    box-shadow: 10px 5px 5px black;
+    position: sticky;
+    box-shadow: 3px 3px 10px black;
 }
 
 .barra-navegacao {
@@ -40,11 +42,11 @@ font-family: "Abril Fatface", serif;
     list-style: none;
 
 }
-
-.barra-navegacao-item-lista {
+a {
+    text-decoration: none;
     font-family: "Abril Fatface", serif;
     font-weight: 400;
-    font-style: normal;
+    font-style: none;
     font-size: 1.2rem;
     color: #C2A273;
     margin: 20px;
@@ -52,7 +54,7 @@ font-family: "Abril Fatface", serif;
     padding: 0.5rem;
 }
 
-.barra-navegacao-item-lista::after {
+a::after {
     content: '';
     position: absolute;
     bottom: 0;
@@ -63,7 +65,7 @@ font-family: "Abril Fatface", serif;
     transition: all 300ms ease-in-out;
 }
 
-.barra-navegacao-item-lista:hover::after {
+a:hover::after {
     width: 100%;
 }
 
@@ -71,13 +73,129 @@ font-family: "Abril Fatface", serif;
     background-color: #501323;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.texto-cabecalho-info1 {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 50px;
+    color: #C2A273;
+}
+.texto-cabecalho-info2 {
+    font-family: "Abril Fatface", serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 30px;
+    color: #C2A273;
+}
+.container-conteudo-info {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    gap: 20px;
+    justify-content: center;
+    height: 80%;
+}
+.container-botao-conteudo-info {
+    margin-top: 50px;
+}
+.texto-conteudo-info {
+    width: 90%;
+    text-align: justify;
+    color: #fff;
+    margin-top: 10px;
+}
+.botao-conteudo-info {
+    border: none;
+    border-radius: 20px;
+    height: 50px;
+    padding: 10px;
+    background-color: #9AA963;
+    font-family: "Abril Fatface", serif;
+    font-weight: 300;
+    font-style: normal; 
+    font-size: 20px;
 
 }
-
+.container-imagem-info {
+    height: 580px;
+    width: 580px;
+}
+.foto-perfil-info {
+    height: 600px;
+    border-radius: 360px;
+}
+.decoracao-foto-perfil-info {
+    position: absolute;
+    height: 220px;
+    top: 85%;
+    left: 85%;
+}
 .container-servicos {
     background-color: #C2A273;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.contanier-cabecalho-sevicos {
+    width: 80vw;
+}
+.titulo-cabecalho-servicos {
+    font-family: "Abril Fatface", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: #501323; 
+}
+.container-cards-servicos {
+    height: 80vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    background-color: ;
+
+}
+.cards-servicos {
+    background-color: #9AA963;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border: #501323 solid 2px;
+    border-radius: 20px;
+    width: 25vw;
+}
+.cabecalho-cards-servicos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+.container-texto-cards-servicos {
+    display: flex;
+    justify-content: center;
+    width: 12vw;
+    align-items: center;
+}
+.texto-cards-servicos {
+    text-align: justify;
+}
+.icone-cards {
+    width: 10vw;
+}
+.imagem-cards {
+    width: 200px;
+    border-radius: 360px;
 }
 
 .container-portfolio {
@@ -85,7 +203,6 @@ font-family: "Abril Fatface", serif;
     width: 100vw;
     height: 100vh;
 }
-
 .container-abordagem {
     background-color: #C2A273;
     width: 100vw;
@@ -100,5 +217,5 @@ font-family: "Abril Fatface", serif;
 
 .imagem-logo {
     height: 20vh;
-
 }
+
