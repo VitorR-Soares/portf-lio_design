@@ -20,13 +20,13 @@ font-family: "Abril Fatface", serif;
     font-family: "Inter", sans-serif;
     font-size: 1rem;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 .container-barra-navegacao {
     background-color: #501323;
     width: 100vw;
     height: 20vh;
-    position: sticky;
     box-shadow: 3px 3px 10px black;
 }
 
@@ -42,6 +42,7 @@ font-family: "Abril Fatface", serif;
     list-style: none;
 
 }
+
 a {
     text-decoration: none;
     font-family: "Abril Fatface", serif;
@@ -79,20 +80,23 @@ a:hover::after {
     align-items: center;
     gap: 5px;
 }
+
 .texto-cabecalho-info1 {
     font-family: "Abril Fatface", serif;
     font-weight: 400;
-    font-style: normal; 
+    font-style: normal;
     font-size: 50px;
     color: #C2A273;
 }
+
 .texto-cabecalho-info2 {
     font-family: "Abril Fatface", serif;
     font-weight: 400;
-    font-style: normal; 
+    font-style: normal;
     font-size: 30px;
     color: #C2A273;
 }
+
 .container-conteudo-info {
     display: flex;
     flex-direction: column;
@@ -101,15 +105,18 @@ a:hover::after {
     justify-content: center;
     height: 80%;
 }
+
 .container-botao-conteudo-info {
     margin-top: 50px;
 }
+
 .texto-conteudo-info {
     width: 90%;
     text-align: justify;
     color: #fff;
     margin-top: 10px;
 }
+
 .botao-conteudo-info {
     border: none;
     border-radius: 20px;
@@ -118,24 +125,28 @@ a:hover::after {
     background-color: #9AA963;
     font-family: "Abril Fatface", serif;
     font-weight: 300;
-    font-style: normal; 
+    font-style: normal;
     font-size: 20px;
 
 }
+
 .container-imagem-info {
     height: 580px;
     width: 580px;
 }
+
 .foto-perfil-info {
     height: 600px;
     border-radius: 360px;
 }
+
 .decoracao-foto-perfil-info {
     position: absolute;
     height: 220px;
     top: 85%;
     left: 85%;
 }
+
 .container-servicos {
     background-color: #C2A273;
     width: 100vw;
@@ -145,25 +156,27 @@ a:hover::after {
     justify-content: space-around;
     align-items: center;
 }
+
 .contanier-cabecalho-sevicos {
     width: 80vw;
 }
+
 .titulo-cabecalho-servicos {
     font-family: "Abril Fatface", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 50px;
-    color: #501323; 
+    color: #501323;
 }
+
 .container-cards-servicos {
     height: 80vh;
     width: 80vw;
     display: flex;
     flex-direction: row;
     gap: 20px;
-    background-color: ;
-
 }
+
 .cards-servicos {
     background-color: #9AA963;
     display: flex;
@@ -174,6 +187,7 @@ a:hover::after {
     border-radius: 20px;
     width: 25vw;
 }
+
 .cabecalho-cards-servicos {
     display: flex;
     flex-direction: column;
@@ -181,18 +195,22 @@ a:hover::after {
     gap: 10px;
     align-items: center;
 }
+
 .container-texto-cards-servicos {
     display: flex;
     justify-content: center;
     width: 12vw;
     align-items: center;
 }
+
 .texto-cards-servicos {
     text-align: justify;
 }
+
 .icone-cards {
     width: 10vw;
 }
+
 .imagem-cards {
     width: 200px;
     border-radius: 360px;
@@ -202,7 +220,78 @@ a:hover::after {
     background-color: #501323;
     width: 100vw;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+
 }
+.container-cabecalho-portfolio {
+    width: 80vw;
+}
+.titulo-cabecalho-portfolio {
+    font-family: "Abril Fatface", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 50px;
+    color: #C2A273;
+    margin-top: 20px;
+}
+.texto-cabecalho-portfolio {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    color: #fff;
+}
+.cabecalho-conteudo-portfolio {
+    font-family: "Abril Fatface", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    color: #C2A273;
+    padding: 10px;
+}
+.container-carrossel {
+    max-width: 80vw;
+    display: flex;
+    gap: 10px;
+
+}
+.conainer-carrosel-wrapper {
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+.galeria-carrossel-completo {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 15px;
+}
+.botao-esquerdo, .botao-direito {
+    border: none;
+    background: linear-gradient(90deg, #000 0%, transparent 200%);
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    opacity: 0.1;
+    transition: all 600ms ease-in-out;
+}
+.botao-direito {
+    background: linear-gradient(90deg, transparent 0%, #000 200% );
+}
+.botao-direito:hover, .botao-esquerdo:hover{
+    opacity: 1;
+}
+.img-carrossel {
+    flex-shrink: 0;
+    opacity: 0.6;
+    transition: all 600ms ease-in-out;
+}
+.item-atual {
+    opacity: 1;
+}
+
 .container-abordagem {
     background-color: #C2A273;
     width: 100vw;
@@ -218,4 +307,3 @@ a:hover::after {
 .imagem-logo {
     height: 20vh;
 }
-
